@@ -1,37 +1,14 @@
-<div id="<%= dom_id ticket %>">
-  <p>
-    <strong>Title:</strong>
-    <%= ticket.title %>
-  </p>
 
-  <p>
-    <strong>Description:</strong>
-    <%= ticket.description %>
-  </p>
+  <tr id="<%= dom_id ticket %>">
+    <td><%= ticket.title%></td>
+    <td><%= ticket.description%></td>
+    <td><%= ticket.priority%></td>
+    <td><%= ticket.category%></td>
+    <td><%= ticket.status%></td>
+    <td><%= ticket.user_id%></td>
+    <td><%= ticket.project_id%></td>
+    <td><%= link_to "Details", ticket %></td>
+    <td><%= link_to "Edit", edit_ticket_path(ticket) %></td>
+    <td><%= link_to "Delete", ticket, method: :delete %></td>
+  </tr>
 
-  <p>
-    <strong>Priority:</strong>
-    <%= ticket.priority %>
-  </p>
-
-  <p>
-    <strong>Category:</strong>
-    <%= ticket.category %>
-  </p>
-
-  <p>
-    <strong>Status:</strong>
-    <%= ticket.status %>
-  </p>
-
-  <p>
-    <strong>User ID:</strong>
-    <%= ticket.user_id %>
-  </p>
-
-  <p>
-    <strong>Project:</strong>
-    <%= ticket.project_id %>
-  </p>
-
-</div>

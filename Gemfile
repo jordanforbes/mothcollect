@@ -55,10 +55,13 @@ gem "bootsnap", require: false
 gem "sassc-rails"
 
 #bulma css/ alternative to bootstrap
-gem "bulma-rails", '~> 0.6.1 '
+# gem "bulma-rails", '~> 0.6.1 '
 
+#bootstrap-sass is a Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications.
+gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 #simple form
 # gem 'simple_form', '~> 3.5'
+gem 'jquery-rails'
 
 
 
@@ -84,7 +87,9 @@ group :development do
   #guard is a command line tool to easily handle events on file system modifications
   gem 'guard', '~> 2.14.1' 
   #guard::livereload automatically refreshes the view when it's changed
-  gem 'guard-livereload','~> 2.5.2'
+  # gem 'guard-livereload','~> 2.5.2'
+  #Provides a better error page for Rails and other Rack apps. Includes source code inspection, a live REPL and local/instance variable inspection for all stack frames.
+  gem 'better_errors', '~> 2.9', '>= 2.9.1'
 end
 
 group :test do

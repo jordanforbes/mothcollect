@@ -1,6 +1,20 @@
 <p style="color: green"><%= notice %></p>
 
+<table class="table">
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Priority</th>
+    <th>Category</th>
+    <th>Status</th>
+    <th>User ID</th>
+    <th>Project ID</th>
+    <th>Show</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
 <%= render @ticket %>
+</table>
 
 <div>
   <%= link_to "Edit this ticket", edit_ticket_path(@ticket) %> |

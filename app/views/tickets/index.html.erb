@@ -2,13 +2,25 @@
 
 <h1>Tickets</h1>
 
-<div id="tickets">
-  <% @tickets.each do |ticket| %>
-    <%= render ticket %>
-    <p>
-      <%= link_to "Show this ticket", ticket %>
-    </p>
-  <% end %>
-</div>
 
+<table class = "table" >
+  <%# <%= render tickethead %> %>
+  <tr id="tickethead">
+    <th>Title</th>
+    <th>Description</th>
+    <th>Priority</th>
+    <th>Category</th>
+    <th>Status</th>
+    <th>User ID</th>
+    <th>Project ID</th>
+    <th>Show</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  <tr id="tickets">
+    <% @tickets.each do |ticket| %>
+      <%= render ticket %>
+    <% end %>
+  </tr>
+</table>
 <%= link_to "New ticket", new_ticket_path %>

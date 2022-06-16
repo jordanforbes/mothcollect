@@ -1,1 +1,2 @@
 a ruby on rails bugtracker 
+needs users, tickets, projects, developers

@@ -1,8 +1,3 @@
-desc "describe the task"
-task :describe do 
-    puts "describing"
-end
-
 desc "simplified git command that adds, commits, and pushes"
 task :gitex do 
     msg = (ENV['M'])

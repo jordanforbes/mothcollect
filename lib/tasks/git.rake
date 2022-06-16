@@ -1,3 +1,4 @@
+#shell command: rake gitex M="message here"
 desc "simplified git command that adds, commits, and pushes"
 task :gitex do 
     msg = (ENV['M'])
